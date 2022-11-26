@@ -1,0 +1,26 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "window": "readonly"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": ["node_modules"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    // "plugin:prettier/recommended",
+    "react-app"
+  ],
+  "rules": {
+    "no-unused-vars": "warn",
+    "semi": "error",
+    "no-tabs": "error",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
