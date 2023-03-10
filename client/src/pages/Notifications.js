@@ -17,7 +17,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/user/mark-all-notifications-as-seen',
+        'https://mern-doctor-appoinment-api.onrender.com/api/user/mark-all-notifications-as-seen',
         { userId: user._id },
         {
           headers: {
@@ -42,7 +42,7 @@ function Notifications() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/user/delete-all-notifications',
+        'https://mern-doctor-appoinment-api.onrender.com/api/user/delete-all-notifications',
         { userId: user._id },
         {
           headers: {

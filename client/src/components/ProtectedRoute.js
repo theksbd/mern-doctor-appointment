@@ -15,7 +15,7 @@ function ProtectedRoute(props) {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/user/get-user-info-by-id',
+        'https://mern-doctor-appoinment-api.onrender.com/api/user/get-user-info-by-id',
         { token: localStorage.getItem('token') },
         {
           headers: {

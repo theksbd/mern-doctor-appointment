@@ -35,7 +35,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/doctor/get-doctor-info-by-id',
+        'https://mern-doctor-appoinment-api.onrender.com/api/doctor/get-doctor-info-by-id',
         {
           doctorId: params.doctorId,
         },
@@ -59,7 +59,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/user/check-booking-avilability',
+        'https://mern-doctor-appoinment-api.onrender.com/api/user/check-booking-avilability',
         {
           doctorId: params.doctorId,
           date: date,
@@ -88,7 +88,7 @@ function BookAppointment() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        '/api/user/book-appointment',
+        'https://mern-doctor-appoinment-api.onrender.com/api/user/book-appointment',
         {
           doctorId: params.doctorId,
           userId: user._id,
