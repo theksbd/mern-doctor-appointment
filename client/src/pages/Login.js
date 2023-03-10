@@ -12,7 +12,7 @@ function Login() {
     try {
       dispatch(showLoading());
       console.log(values);
-      const response = await axios.post('/api/user/login', values);
+      const response = await axios.post('https://mern-doctor-appoinment-api.onrender.com/api/user/login', values);
       dispatch(hideLoading());
       if (response.data.success) {
         message.success(response.data.message);
