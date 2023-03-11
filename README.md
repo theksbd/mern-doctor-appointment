@@ -8,5 +8,5 @@ A fullstack website where users can book an appointment with the doctor
 
 # Account for experimenting
 
-thienhoang@gmail.com - 123bn (Role: Patient)
+thienhoang@gmail.com - 123bn (Role: Patient)  
 phamdat@gmail.com - 123bs (Role: Doctor)
